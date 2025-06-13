@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-      header {
+    header {
       background: url('header4.jpeg') center/cover no-repeat;
       height: 300px;
       display: flex;
@@ -86,30 +86,45 @@
       width: 100%;
       border-radius: 1rem;
     }
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      color: #007BFF;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <nav>
-   
-      <img src="logo.jpeg" alt="Logo du site" class="logo">
-
+    <img src="logo.jpeg" alt="Logo du site" class="logo">
     <a href="index.html">Accueil</a>
     <a href="cours.html">Cours</a>
     <a href="activites.html">Activités</a>
     <a href="exercices.html">Exercices interactifs</a>
     <a href="apropos.html">À propos</a>
-    <a href="contact.html">À propos</a>
+    <a href="contact.html">Contact</a>
   </nav>
   <header>
     <h1>Contact</h1>
   </header>
   <main>
     <section class="apropos-container">
-            <div class="apropos-text">
-        <h2>contactez-nous sur :</h2>
+      <div class="apropos-text">
+        <h2>Contactez-nous sur :</h2>
         <a href="https://workspace.google.com/intl/fr/products/gmail/">Gmail: Fyounes7@gmail.com</a>
-        <p>telegrame : younes fellah</p>
-        <p>gsm : +212653282693</p>
+        <p>Telegram: younes fellah</p>
+        <p>GSM: +212653282693</p>
+        
+        <div class="social-icons">
+          <a href="mailto:fyounes7@gmail.com" title="Gmail"><i class="fa-brands fa-google"></i></a>
+          <a href="https://t.me/younesfellah" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="tel:+212653282693" title="GSM"><i class="fa-solid fa-mobile"></i></a>
+        </div>
       </div>
       <div class="apropos-image">
         <img src="img2.jpeg" alt="Photo de présentation">
