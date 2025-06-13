@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technocampus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+      header {
+      background: url('header4.jpeg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    .subscribe-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .subscribe-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+    .subscribe-btn i {
+      font-size: 1.2rem;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      height: 60px;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-left: 1rem;
+    }
+    .apropos-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: rgb(231, 234, 241);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .apropos-text {
+      flex: 1 1 60%;
+    }
+    .apropos-image {
+      flex: 1 1 35%;
+    }
+    .apropos-image img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+   
+      <img src="logo.jpeg" alt="Logo du site" class="logo">
+
+    <a href="index.html">Accueil</a>
+    <a href="cours.html">Cours</a>
+    <a href="activites.html">Activités</a>
+    <a href="exercices.html">Exercices interactifs</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+  <header>
+    <h1>À propos de moi</h1>
+  </header>
+  <main>
+    <section class="apropos-container">
+            <div class="apropos-text">
+        <h2>Qui suis-je ?</h2>
+        <p>Mr F.younes est un professeur de technologie au collège, exerçant depuis 14 ans. Diplômé de l'École Supérieure de Technologie à Salé, il a ensuite poursuivi ses études à la Faculté des Sciences de Rabat, où il a obtenu un diplôme en ingénierie intégrée en mécatronique.</p>
+        <p>Passionné par les nouvelles technologies, notamment la robotique et la domotique, Younes s'est également distingué en tant qu'ex-réalisateur et fondateur d'une organisation de robotique dans la zone sud du Maroc. Son engagement envers l'enseignement et sa passion pour l'innovation technologique font de lui un éducateur inspirant pour ses élèves.</p>
+        <p>Avec une approche dynamique et engageante, il cherche à éveiller l'intérêt des jeunes pour les sciences et les technologies, préparant ainsi la prochaine génération à un avenir technologique prometteur.</p>
+      </div>
+      <div class="apropos-image">
+        <img src="img2.jpeg" alt="Photo de présentation">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Technocampus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
