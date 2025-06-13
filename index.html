@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     .subscribe-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
       background-color: #007BFF;
       color: white;
       padding: 0.75rem 1.5rem;
@@ -31,7 +28,7 @@
     .subscribe-btn i {
       font-size: 1.2rem;
     }
-	.news-ticker {
+    .news-ticker {
       width: 100%;
       background: #222;
       color: white;
@@ -51,7 +48,7 @@
       from { transform: translateX(0); }
       to { transform: translateX(-100%); }
     }
-	.video-container {
+    .video-container {
       position: relative;
       padding-bottom: 56.25%; /* 16:9 */
       height: 0;
@@ -66,7 +63,7 @@
       width: 100%;
       height: 100%;
     }
-   .logo {
+    .logo {
       height: 60px;
       margin-left: 0;
       margin-right: auto;
@@ -77,24 +74,28 @@
       gap: 1rem;
       padding-left: 1rem;
     }
+    header {
+      display: flex;
+      justify-content: center; /* Centrer le contenu dans le header */
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
   <nav>
-  <img src="logo.jpeg" alt="Logo du site" class="logo">
+    <img src="logo.jpeg" alt="Logo du site" class="logo">
     <a href="index.html">Accueil</a>
     <a href="cours.html">Cours</a>
     <a href="activites.html">Activités</a>
     <a href="exercices.html">Exercices interactifs</a>
     <a href="apropos.html">À propos</a>
     <a href="apropos.html">Contact</a>
-	  
   </nav>
   <header>
     <button class="subscribe-btn"><i class="fas fa-envelope-open-text"></i> S'abonner</button>
   </header>
-<div class="news-ticker">
-    <span>Saviez-vous que la maison de Bill Gates a été conçue à l’aide d’un ordinateur Macintosh --- Saviez-vous qu’Amazon vend plus de livres électroniques que de livres imprimés--- Saviez-vous que 97 % des e-mails envoyés quotidiennement sont des spam--- Saviez-vous que 20 % des vidéos YouTube sont liées à la musique--- Saviez-vous que Google a été lancé en janvier 1996 --- Saviez-vous qu’environ 1,8 milliard de personnes sont connectées à Internet et que 450 millions d’entre elles parlent anglais --- Saviez-vous que depuis 2008, les jeux vidéo se vendent plus que les DVD--- Saviez-vous que plus de 4 milliards de téléphones portables sont utilisés et qu’environ 3 millions de téléphones portables sont vendus chaque jour--- Saviez-vous que la première télécommande pour téléviseur date de 1950--- Saviez-vous que le WWW est une partie facultative d’Internet--- Saviez-vous que plus de 16 000 000 de chansons sont vendues sur iTunes chaque jour--- Saviez-vous que les nouveaux employés de Google sont appelés « Noogler »--- Saviez-vous que la CIA a initialement financé en partie le programme Google Earth--- Saviez-vous que 20 % des professionnels de l’informatique sont des femmes--- Saviez-vous que 75 % des emplois du futur nécessiteront l’utilisation d’ordinateurs --- Saviez-vous que le premier réveil n’a sonné qu’à 4 heures du matin--- Saviez-vous que lorsque le premier appareil photo a été inventé, vous deviez rester assis devant lui pendant 8 heures pour qu'il vous prenne en photo --- Saviez-vous que Samsung était à l’origine une entreprise qui vendait des légumes et du poisson séché --- Saviez-vous que nous essaierons de vous fournir plus d’informations via notre site Web 😊</span>
+  <div class="news-ticker">
+    <span>Saviez-vous que la maison de Bill Gates a été conçue à l’aide d’un ordinateur Macintosh --- Saviez-vous qu’Amazon vend plus de livres électroniques que de livres imprimés...</span>
   </div>
   <main>
     <section id="accueil">
@@ -104,9 +105,9 @@
       <p>Rejoignez-nous pour découvrir les nouvelles tendances du numérique, participer à des événements thématiques, et explorer des activités ludiques et pédagogiques conçues pour stimuler votre curiosité.</p>
       <p><strong>Ensemble, apprenons et innovons autour de la technologie !</strong></p>
     </section>
-	      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VtfFj-VeCEw?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/VtfFj-VeCEw?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Technocampus. Tous droits réservés. Fyounes7@gmail.com </p>
