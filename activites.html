@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Activités - Technocampus</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      background: url('header3.jpeg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .video-card {
+      background-color: rgb(231, 234, 241);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    .video-card .description {
+      padding: 1rem;
+    }
+    .logo {
+      height: 60px;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-left: 1rem;
+    }
+	.media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+  </style>
+</head>
+<body>
+  <nav>
+      <img src="logo.jpeg" alt="Logo du site" class="logo">
+    <a href="index.html">Accueil</a>
+    <a href="cours.html">Cours</a>
+    <a href="activites.html">Activités</a>
+    <a href="exercices.html">Exercices interactifs</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+  <header>
+    <h1>Nos Activités</h1>
+  </header>
+  <main>
+    <section class="video-grid">
+      <div class="video-card">
+        <img class="media" src="img1.jpeg" alt="">
+        <div class="description">
+          <h3>Réalité augmentée</h3>
+          <p>Les élèves explorent des objets en 3D grâce à des tablettes éducatives.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/V2fpAPptMoM" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Création d'une application mobile</h3>
+          <p>Apprendre à développer une appli simple avec des outils accessibles à tous.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/lybWCyUgllo" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Découverte de la programmation ludique</h3>
+          <p>Un atelier pour initier les jeunes aux bases du code à travers des jeux.</p>
+        </div>
+      </div>
+	        <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/yJAu1QPzlig" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Découverte de la programmation ludique</h3>
+          <p>Un atelier pour initier les jeunes aux bases du code à travers des jeux.</p>
+        </div>
+      </div>
+	        <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/M79R8RWL140" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Découverte de la programmation ludique</h3>
+          <p>Un atelier pour initier les jeunes aux bases du code à travers des jeux.</p>
+        </div>
+      </div>
+	        <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/lclcivrLKeE" allowfullscreen></iframe>
+        <div class="description">
+          <h3>Découverte de la programmation ludique</h3>
+          <p>Un atelier pour initier les jeunes aux bases du code à travers des jeux.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Technocampus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

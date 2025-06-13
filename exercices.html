@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercices Interactifs - Technocampus</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      background: url('header.jpeg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    .exercice-section {
+      padding: 2rem;
+    }
+    .exercice-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .exercice-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .exercice-card {
+      background-color: rgb(231, 234, 241);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .exercice-card a {
+      color: #007BFF;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    .exercice-card a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      height: 60px;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+      <img src="logo.jpeg" alt="Logo du site" class="logo">
+    <a href="index.html">Accueil</a>
+    <a href="cours.html">Cours</a>
+    <a href="activites.html">Activités</a>
+    <a href="exercices.html">Exercices interactifs</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+  <header>
+    <h1>Exercices interactifs</h1>
+  </header>
+  <main>
+    <section class="exercice-section">
+      <h2>Entraînez-vous avec ces exercices interactifs</h2>
+      <div class="exercice-list">
+        <div class="exercice-card">
+          <p>Exercice 1 - Transistor</p>
+          <a href="https://ladigitale.dev/digiquiz/q/684228102e0ca" target="_blank">Faire l'exercice</a>
+        </div>
+        <div class="exercice-card">
+          <p>Exercice 2 - Energie renouvelable</p>
+          <a href="https://techno-flash.com/quiz/v2/C3ENllo73q/index.html" target="_blank">Faire l'exercice</a>
+        </div>
+        <div class="exercice-card">
+          <p>Exercice 3 - Evolution des objets techniques</p>
+          <a href="https://techno-flash.com/quiz/v2/C3EVnj4ep7/index.html" target="_blank">Faire l'exercice</a>
+        </div>
+        <div class="exercice-card">
+          <p>Exercice 4 - Dessin technique</p>
+          <a href="https://techno-flash.com/quiz/v2/C3DTzz48ym/index.html" target="_blank">Faire l'exercice</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Technocampus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

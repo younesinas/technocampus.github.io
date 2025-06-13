@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technocampus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .subscribe-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .subscribe-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+    .subscribe-btn i {
+      font-size: 1.2rem;
+    }
+	.news-ticker {
+      width: 100%;
+      background: #222;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .news-ticker span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 120s linear infinite;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+	.video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+   .logo {
+      height: 60px;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <img src="logo.jpeg" alt="Logo du site" class="logo">
+    <a href="index.html">Accueil</a>
+    <a href="cours.html">Cours</a>
+    <a href="activites.html">Activités</a>
+    <a href="exercices.html">Exercices interactifs</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+  <header>
+    <button class="subscribe-btn"><i class="fas fa-envelope-open-text"></i> S'abonner</button>
+  </header>
+<div class="news-ticker">
+    <span>Saviez-vous que la maison de Bill Gates a été conçue à l’aide d’un ordinateur Macintosh --- Saviez-vous qu’Amazon vend plus de livres électroniques que de livres imprimés--- Saviez-vous que 97 % des e-mails envoyés quotidiennement sont des spam--- Saviez-vous que 20 % des vidéos YouTube sont liées à la musique--- Saviez-vous que Google a été lancé en janvier 1996 --- Saviez-vous qu’environ 1,8 milliard de personnes sont connectées à Internet et que 450 millions d’entre elles parlent anglais --- Saviez-vous que depuis 2008, les jeux vidéo se vendent plus que les DVD--- Saviez-vous que plus de 4 milliards de téléphones portables sont utilisés et qu’environ 3 millions de téléphones portables sont vendus chaque jour--- Saviez-vous que la première télécommande pour téléviseur date de 1950--- Saviez-vous que le WWW est une partie facultative d’Internet--- Saviez-vous que plus de 16 000 000 de chansons sont vendues sur iTunes chaque jour--- Saviez-vous que les nouveaux employés de Google sont appelés « Noogler »--- Saviez-vous que la CIA a initialement financé en partie le programme Google Earth--- Saviez-vous que 20 % des professionnels de l’informatique sont des femmes--- Saviez-vous que 75 % des emplois du futur nécessiteront l’utilisation d’ordinateurs --- Saviez-vous que le premier réveil n’a sonné qu’à 4 heures du matin--- Saviez-vous que lorsque le premier appareil photo a été inventé, vous deviez rester assis devant lui pendant 8 heures pour qu'il vous prenne en photo --- Saviez-vous que Samsung était à l’origine une entreprise qui vendait des légumes et du poisson séché --- Saviez-vous que nous essaierons de vous fournir plus d’informations via notre site Web 😊</span>
+  </div>
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue sur notre plateforme éducative!</h2>
+      <p>Bienvenue sur notre plateforme éducative moderne et interactive.</p>
+      <p>Notre site vous propose une plateforme éducative dédiée à l'apprentissage de la technologie, accessible à tous. Vous y trouverez des cours structurés, des exercices interactifs pour vous entraîner en autonomie, ainsi que des ressources actualisées pour approfondir vos connaissances.</p>
+      <p>Rejoignez-nous pour découvrir les nouvelles tendances du numérique, participer à des événements thématiques, et explorer des activités ludiques et pédagogiques conçues pour stimuler votre curiosité.</p>
+      <p><strong>Ensemble, apprenons et innovons autour de la technologie !</strong></p>
+    </section>
+	      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VtfFj-VeCEw?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Technocampus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

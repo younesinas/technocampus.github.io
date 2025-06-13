@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cours - Technocampus</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      background: url('header2.jpeg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .course-card {
+      background-color: rgb(231, 234, 241);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .course-card h3 {
+      margin-top: 0;
+    }
+    .course-card a {
+      color: #007BFF;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .course-card a:hover {
+      text-decoration: underline;
+    }
+	   .logo {
+      height: 60px;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+      <img src="logo.jpeg" alt="Logo du site" class="logo">
+    <a href="index.html">Accueil</a>
+    <a href="cours.html">Cours</a>
+    <a href="activites.html">Activités</a>
+    <a href="exercices.html">Exercices interactifs</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+  <header>
+    <h1>Nos Cours</h1>
+  </header>
+  <main>
+    <section class="course-grid">
+      <div class="course-card">
+        <h3>Cours Tech 3AC Version 1</h3>
+        <p>Cours Tech 3AC Version 1</p>
+        <a href="https://drive.google.com/file/d/17zyUi3E58E_6ABjk7F1GbjYwRxkuMz-K/view?usp=drive_link">Accéder au cours</a>
+      </div>
+      <div class="course-card">
+        <h3>Cours Tech 3AC Version 2</h3>
+        <p>Cours Tech 3AC Version V2</p>
+        <a href="https://drive.google.com/file/d/19vz2G4EXAcEkDvkAnUv9J2RILlYhYLaf/view?usp=drive_link">Accéder au cours</a>
+      </div>
+      <div class="course-card">
+        <h3>Explication Transistor</h3>
+        <p>Cette video vous explique les caractéristique d'un transistor</p>
+        <a href="https://youtu.be/z5UFbx5lT2k">Accéder au cours</a>
+      </div>
+      <!-- Tu peux ajouter d'autres cartes de cours ici -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Technocampus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
