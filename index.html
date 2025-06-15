@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technocampus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .subscribe-btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none; /* Enlever le soulignement */
+      text-align: center; /* Centrer le texte */
+    }
+    .subscribe-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+    .subscribe-btn i {
+      font-size: 1.2rem;
+    }
+    .news-ticker {
+      width: 100%;
+      background: #222;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .news-ticker span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 120s linear infinite;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin: 1rem auto; /* Centrer la vidéo */
+      border-radius: 10px;
+      max-width: 800px; /* Limiter la largeur de la vidéo */
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      height: 60px;
+      margin-left: 0;
+      margin-right: auto;
+    }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(231, 234, 241);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+    header {
+      display: flex;
+      justify-content: center; /* Centrer le contenu dans le header */
+      margin-top: 1rem;
+    }
+	
+.carousel-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.carousel-box, .iframe-box {
+  flex: 1 1 500px;
+  min-width: 300px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex: 0 0 100%;
+  object-fit: cover;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.iframe-box iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+  </style>
+
+
+</head>
+<body>
+  <nav>
+    <img src="logo.png" alt="Logo du site" class="logo">
+    <a href="index.html">Accueil</a>
+    <a href="cours.html">Cours</a>
+    <a href="activites.html">Activités</a>
+    <a href="exercices.html">Exercices interactifs</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <header>
+    <a href="https://www.youtube.com/@chefeagle1" class="subscribe-btn"><i class="fas fa-envelope-open-text"></i> S'abonner</a>
+  </header>
+  <div class="news-ticker">
+    <span>Saviez-vous que la maison de Bill Gates a été conçue à l’aide d’un ordinateur Macintosh --- Saviez-vous qu’Amazon vend plus de livres électroniques que de livres imprimés...</span>
+  </div>
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue sur notre plateforme éducative!</h2>
+      <p>Bienvenue sur notre plateforme éducative moderne et interactive.</p>
+      <p>Notre site vous propose une plateforme éducative dédiée à l'apprentissage de la technologie, accessible à tous. Vous y trouverez des cours structurés, des exercices interactifs pour vous entraîner en autonomie, ainsi que des ressources actualisées pour approfondir vos connaissances.</p>
+      <p>Rejoignez-nous pour découvrir les nouvelles tendances du numérique, participer à des événements thématiques, et explorer des activités ludiques et pédagogiques conçues pour stimuler votre curiosité.</p>
+      <p><strong>Ensemble, apprenons et innovons autour de la technologie !</strong></p>
+    </section>
+
+	<section class="carousel-section">
+  <div class="carousel-wrapper">
+      <div class="iframe-box">
+      <iframe src="https://www.youtube.com/embed/VtfFj-VeCEw" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-box">
+      <div class="carousel-container">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-track">
+          <img src="image1.jpg" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+		  <img src="image4.jpg" alt="Image 4">
+          <img src="image5.jpg" alt="Image 5">
+          <img src="image6.jpg" alt="Image 6">
+          <img src="image7.jpg" alt="Image 7">
+          <img src="image8.jpg" alt="Image 8">
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Technocampus. Tous droits réservés.</p>
+  </footer>
+  
+  
+  
+  
+  
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  let currentIndex = 0;
+
+  function updateSlide(index) {
+    track.style.transform = 'translateX(-' + index * 100 + '%)';
+  }
+
+  function goToNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlide(currentIndex);
+  }
+
+  function goToPrevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlide(currentIndex);
+  }
+
+  nextButton.addEventListener('click', goToNextSlide);
+  prevButton.addEventListener('click', goToPrevSlide);
+
+  setInterval(goToNextSlide, 3000);
+</script>
+
+</body>
+</html>
